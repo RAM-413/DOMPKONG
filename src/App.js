@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Header } from "./components/Header";
+import { About } from "./components/About";
+import { Utilities } from "./components/Utilities";
+import { Mint } from "./components/Mint";
+import Partners from "./components/Partners";
+import Accordian from "./components/Accordian";
+import Meet from "./components/Meet";
+import Kong from "./components/Kong"; 
+import Timeline from "./components/Timeline";
+import Preloader from "./components/Preloader";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <About />
+      <Utilities />
+      <Kong />
+      <Mint />
+      <Timeline/>
+      <Partners />
+      <Meet />
+      <Accordian />
+      <Preloader/>
+    </>
   );
 }
 
