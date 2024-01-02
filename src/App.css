@@ -550,10 +550,32 @@
 .gap-20 {
   gap: 20px;
 }
+.ml--30 {
+  margin-left: -35px;
+}
+.first-img {
+  left: 40%;
+  top: 56%;
+}
+.second-img{
+  left: 60%;
+  top: 46%;
+}
+.third-img{
+  left: 75%;
+  top: 36%;
+}
+.start--100 {
+  left: -100% !important;
+}
+.show {
+  left: 0;
+}
 
 /* pre */
 
-.loader_bg {
+
+/* .loader_bg {
   z-index: 100 !important;
 }
 
@@ -591,30 +613,10 @@
   border-right: 5px solid #fff000;
   border-radius: 50%;
   animation: animateC 2s linear infinite;
-}
-.ml--30 {
-  margin-left: -35px;
-}
-.first-img {
-  left: 40%;
-  top: 56%;
-}
-.second-img{
-  left: 60%;
-  top: 46%;
-}
-.third-img{
-  left: 75%;
-  top: 36%;
-}
-.start--100 {
-  left: -100% !important;
-}
-.show {
-  left: 0;
-}
+} */
 
-@keyframes animateC {
+
+/* @keyframes animateC {
   0% {
     transform: rotate(0deg);
   }
@@ -631,6 +633,91 @@
 
   100% {
     transform: rotate(405deg);
+  }
+} */
+
+.d_none{
+  display: none;
+}
+.z-15{
+  z-index: 15;
+}
+#container {
+  width: 100px;
+  height: 125px;
+  margin: auto auto;
+}
+
+.loading-title {
+  display: block;
+  text-align: center;
+  font-size: 20;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  padding-bottom: 15px;
+  color: #888;
+}
+
+.loading-circle {
+  display: block;
+  border-left: 5px solid;
+  border-top-left-radius: 100%;
+  border-top: 5px solid;
+  margin: 5px;
+  animation-name: Loader_611;
+  animation-duration: 1500ms;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.sp1 {
+  border-left-color: #F44336;
+  border-top-color: #F44336;
+  width: 40px;
+  height: 40px;
+}
+
+.sp2 {
+  border-left-color: #FFC107;
+  border-top-color: #FFC107;
+  width: 30px;
+  height: 30px;
+}
+
+.sp3 {
+  width: 20px;
+  height: 20px;
+  border-left-color: #8bc34a;
+  border-top-color: #8bc34a;
+}
+
+@keyframes Loader_611 {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: right bottom;
+  }
+
+  25% {
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+  }
+
+  50% {
+    transform: rotate(180deg);
+    transform-origin: right bottom;
+  }
+
+  75% {
+    transform: rotate(270deg);
+    transform-origin: right bottom;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: right bottom;
   }
 }
 
@@ -869,7 +956,7 @@
     --fs-md: 17px;
     --fs-1md: 19px;
     --fs-lg: 26px;
-    --fs-1lg: 34px;
+    --fs-1lg: 32px;
   }
   .s3-card-padding {
     padding-top: 20px;

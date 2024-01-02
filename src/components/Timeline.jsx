@@ -153,7 +153,7 @@ const Timeline = () => {
           </div>
         </div>
         <div className=" d-flex justify-content-center mt-5">
-        <button className=" main-btn ff-azo fs-sm text-center lh-108 fw-400 color-black " >
+        <button className=" main-btn ff-azo fs-1sm text-center lh-108 fw-400 color-black " >
         Read Our Whitepaper
                 </button></div>
       </Container>

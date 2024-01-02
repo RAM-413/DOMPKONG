@@ -12,7 +12,7 @@ export const Mint = () => {
     setCounter((prevCount) => (prevCount > 1 ? prevCount - 1 : 1));
   };
   const Countvalue = counter < 10 ? `0${counter}` : counter;
-  return (
+  return (  
     <div className="mint-bg pt-5 position-relative z-1">
       <span className=" position-absolute top--10 z-n1 d-none d-md-block">
         <svg
@@ -118,7 +118,7 @@ export const Mint = () => {
                 +
               </p>
             </div>
-            <button className="main-btn max-503 w-100 mt-4  ff-azo color-black text-uppercase lh-108 fs-sm text-center">
+            <button className="main-btn max-503 w-100 mt-4  ff-azo color-black text-uppercase lh-108 fs-1md text-center">
               MINT NOW
             </button>
           </Col>

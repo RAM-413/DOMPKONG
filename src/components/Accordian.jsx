@@ -294,7 +294,7 @@ export const Accordian = () => {
           </a>
         </div>
         <hr className="footer-line" />
-        <p className="ff-mono fs-sm fw-400 color-white mb-0">© DomPKong 2022</p>
+        <p className="ff-mono fs-sm fw-400 color-white mb-0">© DomPKong {new Date().getFullYear()}</p>
       </div>
     </div>
   );
