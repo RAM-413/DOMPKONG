@@ -120,6 +120,12 @@
 .meet-svg {
   filter: drop-shadow(0px 1px 15px rgba(253, 218, 96, 0.7));
 }
+.line-top {
+  border: 1px solid #fdda60;
+  box-shadow: 0 0 15px 2px #fdda60;
+  opacity: 1 !important;
+}
+
 .icon-svg {
   transition: all 300ms linear;
 }
@@ -129,9 +135,9 @@
 .navwidth {
   width: 55%;
 }
-.about-elipse{
+.about-elipse {
   top: -36%;
-  right:2%;
+  right: 2%;
 }
 
 .lh-108 {
@@ -230,7 +236,15 @@
 }
 
 .accordion-item {
-  border-bottom: 1px solid #fdda60 !important;
+  position: relative;
+}
+.ac-line {
+  position: absolute;
+  bottom: 0;
+  background-color: #fdda60;
+  height: 1px;
+  width: 100%;
+  box-shadow: 0 0 15px 2px #fdda60;
 }
 
 .overflow-hidden {
@@ -329,13 +343,16 @@
   margin-top: 65px;
 }
 .max-300 {
-  max-width: 500px !important;
+  max-width: 356px !important;
 }
 
 .mt--15 {
   margin-top: -15%;
 }
 
+.mx-h-153 {
+  height: 130px !important;
+}
 /* monkey-section */
 .bigmonkey {
   max-width: 800px;
@@ -477,19 +494,19 @@
   position: absolute;
   left: -25%;
 }
-.phase-1padding{
+.phase-1padding {
   padding: 23px 16px;
 }
-.phase-2padding{
+.phase-2padding {
   padding: 23px 14px;
 }
-.phase-3padding{
+.phase-3padding {
   padding: 23px 13px;
 }
-.phase-4padding{
+.phase-4padding {
   padding: 23px 14px;
 }
-.phase-5padding{
+.phase-5padding {
   padding: 23px 10px;
 }
 .precentage-circle {
@@ -509,28 +526,28 @@
   max-width: 1000px;
   width: 100%;
 }
-.after-line{
+.after-line {
   position: relative;
 }
-.after-line::after{
+.after-line::after {
   position: absolute;
   content: "";
   width: 100%;
   left: 0;
   bottom: 0;
   height: 5px;
-  background-color: #F1C85D;
+  background-color: #f1c85d;
 }
-.gap-37{
+.gap-37 {
   gap: 37px;
 }
-.gap-roadmap{
+.gap-roadmap {
   gap: 43px;
 }
-.gap-roadmap-1{
+.gap-roadmap-1 {
   gap: 37px;
 }
-.gap-20{
+.gap-20 {
   gap: 20px;
 }
 
@@ -575,26 +592,45 @@
   border-radius: 50%;
   animation: animateC 2s linear infinite;
 }
-.ml--30{
+.ml--30 {
   margin-left: -35px;
 }
+.first-img {
+  left: 40%;
+  top: 56%;
+}
+.second-img{
+  left: 60%;
+  top: 46%;
+}
+.third-img{
+  left: 75%;
+  top: 36%;
+}
+.start--100 {
+  left: -100% !important;
+}
+.show {
+  left: 0;
+}
+
 @keyframes animateC {
   0% {
-     transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-     transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes animate {
   0% {
-     transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   100% {
-     transform: rotate(405deg);
+    transform: rotate(405deg);
   }
 }
 
@@ -665,11 +701,10 @@
     max-width: 670px;
     width: 100%;
   }
-  .ps-37{
+  .ps-37 {
     padding-left: 37px;
   }
-
- }
+}
 
 @media (min-width: 992px) {
   .roadmap-para1 {
@@ -711,7 +746,6 @@
   }
 }
 
-
 @media (min-width: 768px) {
   .s3-card {
     padding: 25px 19px 22px;
@@ -727,10 +761,32 @@
     --fs-lg: 34px;
     --fs-1lg: 58px;
   }
+  .first-img{
+    left: 34%;
+    top: 50%;
+  }
+  .second-img{
+    left: 56%;
+    top: 38%;
+  }
+  .third-img{
+    left: 64%;
+    top:25%;
+  }
 }
-@media (max-width: 992px) {
-  .gap-roadmap-1{
+@media (max-width: 991.9px) {
+  .gap-roadmap-1 {
     gap: 37px;
+  }
+  .open-nav {
+    justify-content: center !important;
+    flex-direction: column !important;
+    gap: 30px !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: red;
   }
   :root {
     /*font-size*/
@@ -741,12 +797,24 @@
     --fs-lg: 32px;
     --fs-1lg: 50px;
   }
-  .ml--30{
+  .ml--30 {
     margin-left: 0px;
   }
+  .first-img{
+    left: 20%;
+    top: 50%;
+  }
+  .second-img{
+    left: 46%;
+    top: 38%;
+  }
+  .third-img{
+    left: 55%;
+    top:25%;
+  }
 }
+
 @media (max-width: 768px) {
- 
   .navwidth {
     width: 100%;
   }
@@ -762,6 +830,7 @@
   .pt-10 {
     padding-top: 4rem;
   }
+
   .bigmonkey {
     padding-top: 20px;
     padding-bottom: 0;
@@ -772,12 +841,25 @@
   .meet-padding {
     padding-bottom: 30px;
   }
+  .first-img{
+    left: 10%;
+    top: 50%;
+  }
+  .second-img{
+    left: 40%;
+    top: 38%;
+  }
+  .third-img{
+    left: 48%;
+    top:25%;
+  }
 }
+
 @media (max-width: 576px) {
-  .gap-roadmap{
+  .gap-roadmap {
     gap: 10px;
   }
-  .gap-roadmap-1{
+  .gap-roadmap-1 {
     gap: 10px;
   }
   :root {
@@ -796,5 +878,29 @@
   .kong-elipse {
     width: 200px;
     height: 200px;
+  }
+  .main-btn {
+    padding: 14px 16px !important;
+  }
+  .first-img{
+    left: -25%;
+    top: 50%;
+  }
+  .second-img{
+    left: 30%;
+    top: 38%;
+  }
+  .w-150{
+    width: 100px;
+  }
+  .h-150{
+    height: 100px;
+  }
+  .max-300{
+    max-width: 200px !important;
+  }
+  .kong-padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }

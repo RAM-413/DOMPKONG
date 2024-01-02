@@ -11,7 +11,7 @@ const Preloader = () => {
     <div>
       <div
         id="preloader"
-        class=" overflow-y-hidden  position-relative loader_bg "
+        class=" overflow-y-hidden  position-relative loader_bg " 
       >
         <div class=" bg-black vh-100 d-flex align-items-center justify-content-center  position-fixed  top-0 start-0 w-100 ">
           <div class="d-flex align-items-center justify-content-center preloder-img ">

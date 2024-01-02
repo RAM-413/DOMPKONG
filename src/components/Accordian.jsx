@@ -83,6 +83,7 @@ export const Accordian = () => {
         </h3>
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0" className="mt-2">
+            <div className="ac-line"></div>
             <Accordion.Header className="acc-crd fs-md fw-700 ff-mono text-white">
               Arcu faucibus diam feugiat magna etiam.
             </Accordion.Header>
@@ -93,6 +94,7 @@ export const Accordian = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1" className="mt-2">
+          <div className="ac-line"></div>
             <Accordion.Header className="acc-crd fs-md fw-700 ff-mono text-white">
               Fermentum tortor aenean.
             </Accordion.Header>
@@ -103,6 +105,7 @@ export const Accordian = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2" className="mt-2">
+          <div className="ac-line"></div>
             <Accordion.Header className="acc-crd fs-md fw-700 ff-mono text-white">
               Dictum est amet sollicitudin.
             </Accordion.Header>
@@ -113,6 +116,7 @@ export const Accordian = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3" className="mt-2">
+          <div className="ac-line"></div>
             <Accordion.Header className="acc-crd fs-md fw-700 ff-mono text-white">
               Sed vulputate mi faucibus.
             </Accordion.Header>
@@ -123,6 +127,7 @@ export const Accordian = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4" className="mt-2">
+          <div className="ac-line"></div>
             <Accordion.Header className="acc-crd fs-md fw-700 ff-mono text-white">
               Commodo placerat ultricies.
             </Accordion.Header>
@@ -133,6 +138,7 @@ export const Accordian = () => {
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="5" className="mt-2">
+          <div className="ac-line"></div>
             <Accordion.Header className="acc-crd fs-md fw-700 ff-mono text-white">
               Nunc amet cursus morbi donec.
             </Accordion.Header>

@@ -51,28 +51,28 @@ const Kong = () => {
       {
         breakpoint: 595,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3.5,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 390,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 340,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2.5,
           slidesToScroll: 1,
         },
       },
@@ -114,28 +114,28 @@ const Kong = () => {
       {
         breakpoint: 595,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3.5,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 390,
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 340,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2.5,
           slidesToScroll: 1,
         },
       },
@@ -153,23 +153,23 @@ const Kong = () => {
         <Slider {...settings} className=" d-block d-lg-none mt-5">
           <div className=" mx-auto">
             
-            <img src={left1} alt="image" className=" mx-auto" />
+            <img src={left1} alt="image" className=" mx-auto w-150 h-150 mx-5" />
           </div>
           <div className=" mx-auto">
           
-            <img src={left2} alt="image" className=" mx-auto" />
+            <img src={left2} alt="image" className=" mx-auto w-150 h-150 mx-5" />
           </div>
           <div className=" mx-auto">
             
-            <img src={left3} alt="image" className=" mx-auto" />
+            <img src={left3} alt="image" className=" mx-auto w-150 h-150 mx-5" />
           </div>
           <div className=" mx-auto">
            
-            <img src={left4} alt="image" className=" mx-auto" />
+            <img src={left4} alt="image" className=" mx-auto w-150 h-150 mx-5" />
           </div>
           <div className=" mx-auto">
            
-            <img src={left5} alt="image" className=" mx-auto" />
+            <img src={left5} alt="image" className=" mx-auto w-150 h-150 mx-5" />
           </div>
         </Slider>
         <div className=" d-flex justify-content-center">
@@ -181,35 +181,35 @@ const Kong = () => {
         </div>
         <Slider {...slider2} className=" d-block d-lg-none mt-5">
           <div className=" mx-auto">
-            <img src={Right1} alt="image" className=" mx-auto" />
+            <img src={Right1} alt="image" className=" mx-auto w-150 h-150 mx-5" />
           </div>
           <div className=" mx-auto">
-            <img src={Right2} alt="image" className=" mx-auto" />
+            <img src={Right2} alt="image" className=" mx-auto w-150 h-150 mx-5" />
           </div>
           <div className=" mx-auto">
           
-            <img src={Right3} alt="image" className=" mx-auto" />
+            <img src={Right3} alt="image" className=" mx-auto w-150 h-150 mx-5" />
           </div>
           <div className=" mx-auto">
            
-            <img src={Right4} alt="image" className=" mx-auto" />
+            <img src={Right4} alt="image" className="mx-auto w-150 h-150 mx-5" />
           </div>
           <div className=" mx-auto">
           
-            <img src={Right5} alt="image" className=" mx-auto" />
+            <img src={Right5} alt="image" className="mx-auto w-150 h-150 mx-5" />
           </div>
         </Slider>
         <div className=" d-none d-lg-block">
-          <img src={left1} alt="images" className="left1" />
-          <img src={left2} alt="images" className="left2" />
-          <img src={left3} alt="images" className="left3" />
-          <img src={left4} alt="images" className="left4" />
-          <img src={left5} alt="images" className="left5" />
-          <img src={Right1} alt="images" className="right1" />
-          <img src={Right2} alt="images" className="right2" />
-          <img src={Right3} alt="images" className="right3" />
-          <img src={Right4} alt="images" className="right4" />
-          <img src={Right5} alt="images" className="right5" />
+          <img src={left1} alt="images" className="left1 " />
+          <img src={left2} alt="images" className="left2 " />
+          <img src={left3} alt="images" className="left3 " /> 
+          <img src={left4} alt="images" className="left4 " />
+          <img src={left5} alt="images" className="left5 " />
+          <img src={Right1} alt="images" className="right1 " />
+          <img src={Right2} alt="images" className="right2 " />
+          <img src={Right3} alt="images" className="right3 " />
+          <img src={Right4} alt="images" className="right4 " />
+          <img src={Right5} alt="images" className="right5 " />
         </div>
       </Container>
     </div>

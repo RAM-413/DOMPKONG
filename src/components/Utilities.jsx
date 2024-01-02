@@ -30,7 +30,31 @@ const mycardinfo = [
 export const Utilities = () => {
     const mycard = mycardinfo.map((mycard) => (
         <Col lg={4} sm={6}>
-            <div className='s3-card mt-4 mt-lg-0'>
+            <div className='s3-card mt-4 mt-lg-0 position-relative z-1'>
+                <span className=' position-absolute end-0 top-0 z-n1'><svg xmlns="http://www.w3.org/2000/svg" width="214" height="215" viewBox="0 0 214 215" fill="none">
+  <g filter="url(#filter0_f_0_94)">
+    <circle cx="197.5" cy="17.5" r="45.5" fill="white"/>
+  </g>
+  <defs>
+    <filter id="filter0_f_0_94" x="0" y="-180" width="395" height="395" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="76" result="effect1_foregroundBlur_0_94"/>
+    </filter>
+  </defs>
+</svg></span>
+<span className=' position-absolute bottom-0 start-0 z-n1'><svg xmlns="http://www.w3.org/2000/svg" width="242" height="243" viewBox="0 0 242 243" fill="none">
+  <g filter="url(#filter0_f_0_93)">
+    <circle cx="8.5" cy="233.5" r="45.5" fill="white"/>
+  </g>
+  <defs>
+    <filter id="filter0_f_0_93" x="-225" y="0" width="467" height="467" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="94" result="effect1_foregroundBlur_0_93"/>
+    </filter>
+  </defs>
+</svg></span>
                 <div className=' text-center'>{mycard.svg}</div>
                 <p className=' lh-108 fw-semibold fs-1md text-center ff-mono color-white mt-3'>{mycard.text}</p>
                 <p className=' lh-160 fw-normal fs-sm text-center ff-mono color-white mb-0'>Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra amet et. Erat nam molestie. Vitae mollis lacus senectus mattis nisl. Porta , adipiscing sed mus diam amet, ac sed tellus. </p>

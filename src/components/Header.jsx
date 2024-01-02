@@ -1,11 +1,21 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import imglogo from "../assets/images/nav-img.png";
-
+import leftheader from "../assets/images/left-header.png";
+import rightheader from "../assets/images/right-header.png";
+import first_img from "../assets/images/first-img.png";
+import second_img from "../assets/images/second-img.png";
+import third_img from "../assets/images/thirdimg.png";
+ 
 export const Header = () => {
   return (
     <>
-      <header className="bg-img ">
+      <header className="bg-img  position-relative z-1 overflow-hidden">
+        <img className=" position-absolute start-0 top-0 z-n1 " src={leftheader} alt="img" />
+        <img className=" position-absolute end-0 top-0 z-n1 d-none d-md-block" src={rightheader} alt="img" />
+        <img className="position-absolute first-img z-n1 " src={first_img} alt="image" />
+        <img className="position-absolute second-img z-n1 " src={second_img} alt="abc" />
+        <img className="position-absolute third-img z-n1 d-none d-sm-block" src={third_img} alt="abc" />
         <Container>
           <div className=" d-flex justify-content-end">
             <div className="d-flex align-items-center justify-content-between navwidth">
@@ -159,11 +169,11 @@ export const Header = () => {
           <h2 className="ff-azo fs-1lg fw-400 color-white text-center mx-auto pt-5">
             WELCOME <br /> TO <span className="color-yellow after-line"> DomPKong</span>
           </h2>
-          <p className="ff-mono  fs-sm color-white fw-400 text-center mx-auto max-565 pt-2 opacity-70">
+          <p className="ff-mono  fs-sm color-white fw-400 text-center mx-auto max-565 pt-2">
             Turpis et tortor vel pharetra nibh. Mauris nisl sit vitae viverra
             amet et. Erat nam molestie. Vita
           </p>
-          <div className="d-flex flex-wrap  justify-content-center gap-5 mt-4">
+          <div className="d-flex justify-content-center gap-2 gap-sm-5 mt-4">
             <button className="main-btn ff-azo color-black text-uppercase lh-108 fs-sm text-center fw-400">
               Whitepaper
               

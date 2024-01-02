@@ -8,10 +8,10 @@ export const Meet = () => {
   return (
     <div>
       <Container>
-        <h1 className=" fs-1lg color-white fw-normal lh-108 text-center mb-0 meet-padding">
+        <h1 className=" fs-1lg color-white ff-azo fw-normal lh-108 text-center mb-0 meet-padding pt-5">
           Meet The Team
         </h1>
-        <hr className="orange-line m-0" />
+      <hr className="line-top" />
         <Row className=" pt-4">
           <Col xl={6} lg={5} md={4} className="">
             <p className=" ff-mono fs-1md fw-bold color-white mb-0">
@@ -82,7 +82,7 @@ export const Meet = () => {
           </Col>
         </Row>
         <div className="mt-65">
-          <hr className="orange-line m-0" />
+        <hr className="line-top" />
           <Row className=" pt-4">
             <Col xl={6} lg={5} md={4} className="">
               <p className=" ff-mono fs-md fw-bold color-white mb-0">
@@ -154,7 +154,7 @@ export const Meet = () => {
           </Row>
         </div>
         <div className="mt-65">
-          <hr className="orange-line m-0" />
+        <hr className="line-top" />
           <Row className=" pt-4">
             <Col xl={6} lg={5} md={4} className="">
               <p className=" ff-mono fs-md fw-bold color-white mb-0">

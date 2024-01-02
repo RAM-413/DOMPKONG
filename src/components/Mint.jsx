@@ -6,27 +6,49 @@ export const Mint = () => {
   const [counter, setCounter] = useState(1);
 
   const handleIncrement = () => {
-    setCounter(counter + 1);
+    setCounter((prevCount) => (prevCount < 10000 ? prevCount + 1 : prevCount));
   };
   const handleDecrement = () => {
-    setCounter(Math.max(1, counter - 1));
+    setCounter((prevCount) => (prevCount > 1 ? prevCount - 1 : 1));
   };
-
+  const Countvalue = counter < 10 ? `0${counter}` : counter;
   return (
     <div className="mint-bg pt-5 position-relative z-1">
       <span className=" position-absolute top--10 z-n1 d-none d-md-block">
-      <svg xmlns="http://www.w3.org/2000/svg" width="465" height="757" viewBox="0 0 465 757" fill="none">
-  <g filter="url(#filter0_f_0_62)">
-    <circle cx="86.5" cy="378.5" r="86.5" fill="#FDDA60"/>
-  </g>
-  <defs>
-    <filter id="filter0_f_0_62" x="-292" y="0" width="757" height="757" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-      <feGaussianBlur stdDeviation="146" result="effect1_foregroundBlur_0_62"/>
-    </filter>
-  </defs>
-</svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="465"
+          height="757"
+          viewBox="0 0 465 757"
+          fill="none"
+        >
+          <g filter="url(#filter0_f_0_62)">
+            <circle cx="86.5" cy="378.5" r="86.5" fill="#FDDA60" />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_0_62"
+              x="-292"
+              y="0"
+              width="757"
+              height="757"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="146"
+                result="effect1_foregroundBlur_0_62"
+              />
+            </filter>
+          </defs>
+        </svg>
       </span>
       <span className=" position-absolute end-0 top-40 mint-elipse-2 z-n1"></span>
       <Container className="">
@@ -87,7 +109,7 @@ export const Mint = () => {
                 -
               </p>
               <p className="mb-0 size-container d-flex align-items-center justify-content-center ff-mono fs-lg fw-900 lh-108 color-white">
-                {counter}
+                {Countvalue}
               </p>
               <p
                 className="d-flex align-items-center justify-content-center  add curser-pointer mb-0 ff-mono fs-lg fw-900 lh-108 color-black"

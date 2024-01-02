@@ -7,9 +7,10 @@ import { Mint } from "./components/Mint";
 import Partners from "./components/Partners";
 import Accordian from "./components/Accordian";
 import Meet from "./components/Meet";
-import Kong from "./components/Kong"; 
+import Kong from "./components/Kong";
 import Timeline from "./components/Timeline";
 import Preloader from "./components/Preloader";
+import Navbar from "./components/Navusestate";
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
       <Timeline/>
       <Partners />
       <Meet />
-      <Accordian />
       <Preloader/>
+      <Accordian /> 
+      {/* <Navbar /> */}
     </>
   );
 }
